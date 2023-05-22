@@ -83,7 +83,7 @@ function soChan() {
         }
     }
 
-    var soChanCuoi = []
+    var soChanCuoi = -1
     for (var i = 0; i < soChan1.length; i++) {
         
         if (soChan1[i] %2 == 0) {
@@ -91,7 +91,7 @@ function soChan() {
             console.log(soChanCuoi)
         }
     }
-    document.getElementById("timSoCNN").innerHTML = "Số chẵn cuối cùng :" + soChanCuoi
+    document.getElementById("timSoCNN").innerHTML = soChanCuoi
 }
 
 document.getElementById("timSoChan").onclick = soChan
